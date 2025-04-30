@@ -68,10 +68,12 @@ img {
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--white);
+    border: 2px solid var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--hover1-color);
+    background-color: var(--secondary-color);
+    color: var(--hover1-color);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
 }
@@ -446,6 +448,11 @@ nav {
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.skills-column:hover {
+    transform: translateY(-10px);
 }
 
 .skills-title {
